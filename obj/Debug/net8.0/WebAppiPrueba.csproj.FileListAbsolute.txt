@@ -141,3 +141,5 @@
 /Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/obj/Debug/net8.0/WebAppiPrueba.MvcApplicationPartsAssemblyInfo.cs
+/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/bin/Debug/net8.0/ArchivosSCRIPT/PruebasJwt.postman_collection.json
+/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/obj/Debug/net8.0/WebAppiPrueba.sourcelink.json

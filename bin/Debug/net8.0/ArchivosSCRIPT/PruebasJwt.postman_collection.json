@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f3fa5f42-c5ec-4a70-b151-0131ffbeb316",
+		"name": "PruebasJwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36702130"
+	},
+	"item": [
+		{
+			"name": "Lista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZ3VlcnJhQGdtYWlsLmNvbSIsImV4cCI6MTczMDYwNzY2Mn0.5jO31n5cerP4CMXyaTcj0Oeb35R5XykxMPWKcrnYRAQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Producto/Lista",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Producto",
+						"Lista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrarse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Kendall\",\n  \"correo\": \"kguerra@gmail.com\",\n  \"clave\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Acceso/Registrarse",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Acceso",
+						"Registrarse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"correo\": \"string\",\n  \"contra\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Acceso/Login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Acceso",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
