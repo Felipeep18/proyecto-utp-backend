@@ -22,7 +22,7 @@ namespace WebAppiPrueba.Controllers
         }
 
         [HttpPost]
-        [Route("Registrarse")]
+        [Route("api/register")]
         public async Task<IActionResult> Registrarse(UsuarioDTO usuario)
         {
             var modelUsuario = new Usuario
@@ -36,13 +36,13 @@ namespace WebAppiPrueba.Controllers
             await _dbPruebaContext.SaveChangesAsync();
 
             if (modelUsuario.IdUsuario != 0)
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = true });
+                return StatusCode(StatusCodes.Status200OK, new { data = true });
             else
-                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false });
+                return StatusCode(StatusCodes.Status200OK, new { data = false });
         }
 
         [HttpPost]
-        [Route("Login")]
+        [Route("api/login")]
         public async Task<IActionResult> Login(LoginDTO login)
         {
             var usuarioEncontrado = await _dbPruebaContext.Usuarios
@@ -51,9 +51,9 @@ namespace WebAppiPrueba.Controllers
                                                             u.Clave == _utilidades.encriptarSHA256(login.Contra)
                                                             ).FirstOrDefaultAsync();
             if (usuarioEncontrado is null)
-                return StatusCode(StatusCodes.Status200OK, new { issSuccess = false, token = "" });
+                return StatusCode(StatusCodes.Status200OK, new { data = false, message = "usuario no encontrado" });
             else
-                return StatusCode(StatusCodes.Status200OK, new { issSuccess = true, token = _utilidades.generarJWT(usuarioEncontrado) });
+                return StatusCode(StatusCodes.Status200OK, new { data = true, token = _utilidades.generarJWT(usuarioEncontrado) });
         }
     }
 }

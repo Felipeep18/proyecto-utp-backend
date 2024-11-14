@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/WebAppiPrueba.csproj": {}
+    "C:\\PruebasBackend\\JWT\\PruebaJWt\\WebAppiPrueba.csproj": {}
   },
   "projects": {
-    "/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/WebAppiPrueba.csproj": {
+    "C:\\PruebasBackend\\JWT\\PruebaJWt\\WebAppiPrueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/WebAppiPrueba.csproj",
+        "projectUniqueName": "C:\\PruebasBackend\\JWT\\PruebaJWt\\WebAppiPrueba.csproj",
         "projectName": "WebAppiPrueba",
-        "projectPath": "/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/WebAppiPrueba.csproj",
-        "packagesPath": "/Users/kendallguerra/.nuget/packages/",
-        "outputPath": "/Users/kendallguerra/Documents/C#/Proyecto jwt/WebAppiPrueba/obj/",
+        "projectPath": "C:\\PruebasBackend\\JWT\\PruebaJWt\\WebAppiPrueba.csproj",
+        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+        "outputPath": "C:\\PruebasBackend\\JWT\\PruebaJWt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kendallguerra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,15 +50,15 @@
               "target": "Package",
               "version": "[8.0.10, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.10, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -81,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

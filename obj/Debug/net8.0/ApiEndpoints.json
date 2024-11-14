@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "WebAppiPrueba.Controllers.AccesoController",
+    "Method": "Login",
+    "RelativePath": "api/Acceso/api/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "WebAppiPrueba.Models.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAppiPrueba.Controllers.AccesoController",
+    "Method": "Registrarse",
+    "RelativePath": "api/Acceso/api/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "WebAppiPrueba.Models.DTOs.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

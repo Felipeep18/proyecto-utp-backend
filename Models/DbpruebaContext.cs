@@ -60,5 +60,3 @@ public partial class DbpruebaContext : DbContext
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
-
-// dotnet Scaffold-DbContext "Data Source=Localhost;Database=DBPrueba;User Id=sa;Password=Panama04;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models

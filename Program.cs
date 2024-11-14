@@ -14,8 +14,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DbpruebaContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 39))); 
 });
+
 
 builder.Services.AddSingleton<Utilidades>();
 
@@ -52,7 +54,16 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.MapGet("/", context =>
+    {
+        context.Response.Redirect("/swagger");
+        return Task.CompletedTask;
+    });
+
+    app.MapControllers();
 }
+
+
 
 app.UseCors("NewPolicy");
 app.UseAuthentication();
